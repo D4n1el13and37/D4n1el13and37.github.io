@@ -9,77 +9,90 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <nav class="navigation">
-          <ul class="navigator-list flex">
-            <li class="navigator-item">
-              <a href="#">Home</a>
-            </li>
-            <li class="navigator-item">
-              <a href="#about">About me</a>
-            </li>
-            <li class="navigator-item">
-              <a href="#skills">Skills</a>
-            </li>
-            <li class="navigator-item">
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li class="navigator-item">
-              <a href="#contacts">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-info flex">
-          <h1 id="title">Denis Novik</h1>
-          <p class="description">
-            UX | UI designer <br />
-            24 years old, Minsk
-          </p>
-          <div class="change-language">
-            <button id="selected">ENG</button>
-            <span></span>
-            <button>RU</button>
-          </div>
-        </div>
-        <img src="src/BSPP2266.jpg" alt="my photo" />
-      </div>
-    </header>
-    <main class="main">
-      <!-- about -->
+    <header id="header">
+      <nav>
+        <ul>
+          <li>
+            <a data-active href="#">Home</a>
+          </li>
 
-      <section class="section" id="about">
-          <h2 class="subtitle about-subtitle">About me</h2>
-          <p class="about-description">
-            Hi, I&rsquo;m Denis&nbsp;&mdash; UX/UI designer from Minsk.
-            <br />
-            I&rsquo;m interested in&nbsp;design and everything connected
-            with&nbsp;it.
-            <br />
-            <br />
-            <br />
-            I&rsquo;m studying at&nbsp;courses &laquo;Web and mobile design
-            <br />
-            interfaces&raquo; in&nbsp;IT-Academy.
-            <br />
-            <br />
-            <br />
-            Ready to&nbsp;implement excellent projects
-            <br />
-            with wonderful people.
-          </p>
+          <li>
+            <a href="#about">About me</a>
+          </li>
+
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#footer">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section id="summary">
+        <figure>
+          <figcaption>
+            <h1>Denis Novik</h1>
+
+            <p>
+              UX | UI designer <br />
+              24 years old, Minsk
+            </p>
+
+            <div>
+              <button data-active>ENG</button>
+              <button>RU</button>
+            </div>
+          </figcaption>
+
+          <img src="src/BSPP2266.jpg" alt="my photo" />
+        </figure>
+      </section>
+     
+      <section id="about">
+        <h2 class="subtitle">About me</h2>
+
+        <p>
+          Hi, I&rsquo;m Denis&nbsp;&mdash; UX/UI designer from Minsk.
+          <br />
+          I&rsquo;m interested in&nbsp;design and everything connected
+          with&nbsp;it.
+          <br />
+          <br />
+          <br />
+          I&rsquo;m studying at&nbsp;courses &laquo;Web and mobile design
+          <br />
+          interfaces&raquo; in&nbsp;IT-Academy.
+          <br />
+          <br />
+          <br />
+          Ready to&nbsp;implement excellent projects
+          <br />
+          with wonderful people.
+        </p>
       </section>
       <!-- skills -->
 
-      <section class="section" id="skills">
+      <section id="skills">
         <h2 class="subtitle">Skills</h2>
+
         <span class="skills-description">
           I&nbsp;work in&nbsp;such programs&nbsp;as.
         </span>
-        <ul class="skills-list">
-          <li class="skills-item">
+
+        <ul>
+          <li>
             <img src="src/skills img/PS.jpg" alt="Photoshop icon" />
-            <h3 class="programms">Adobe Photoshop</h3>
+            
+            <h3>Adobe Photoshop</h3>
+
             <div class="skills-rating flex">
               <img src="src/Black-star.svg" alt="Skill rating 4 by 5" />
               <img src="src/Black-star.svg" alt="" />
@@ -88,9 +101,12 @@
               <img src="src/Empty-star.svg" alt="" />
             </div>
           </li>
+
           <li class="skills-item">
             <img src="src/skills img/AI.jpg" alt="Adobe Illustrator icon" />
-            <h3 class="programms">Adobe Illustrator</h3>
+            
+            <h3>Adobe Illustrator</h3>
+            
             <div class="skills-rating flex">
               <img src="src/Black-star.svg" alt="Skill rating 3 by 5" />
               <img src="src/Black-star.svg" alt="" />
@@ -99,9 +115,12 @@
               <img src="src/Empty-star.svg" alt="" />
             </div>
           </li>
+
           <li class="skills-item">
             <img src="src/skills img/AAE.jpg" alt="After Effect icon" />
-            <h3 class="programms">Adobe After Effect</h3>
+            
+            <h3>Adobe After Effect</h3>
+            
             <div class="skills-rating flex">
               <img src="src/Black-star.svg" alt="Skill rating 4 by 5" />
               <img src="src/Black-star.svg" alt="" />
@@ -110,9 +129,12 @@
               <img src="src/Empty-star.svg" alt="" />
             </div>
           </li>
+
           <li class="skills-item">
             <img src="src/skills img/Figma.jpg" alt="Figma icon" />
-            <h3 class="programms">Figma</h3>
+            
+            <h3>Figma</h3>
+            
             <div class="skills-rating flex">
               <img src="src/Black-star.svg" alt="Skill rating 4 by 5" />
               <img src="src/Black-star.svg" alt="" />
@@ -123,54 +145,59 @@
           </li>
         </ul>
       </section>
-      <!-- Portfolio -->
 
-      <section class="section" id="portfolio">
+      <section id="portfolio">
         <h2 class="subtitle">Portfolio</h2>
-        <div class="portfolio-first">
+        <figure>
           <img
             src="src/portfolio img/Portfolio 1.jpg"
             alt="Online fashion store - Homepage"
           />
-          <a class="portfolio-links" href="#" target="_blank"
-            >Online fashion store - Homepage</a
-          >
-        </div>
-        <div class="portfolio-second">
+
+          <figcaption>
+            <a href="#" target="_blank">Online fashion store - Homepage</a>
+          </figcaption>
+        </figure>
+
+        <figure>
           <img
             src="src/portfolio img/Portfolio 2.jpg"
             alt="Reebok Store - Concept"
           />
-          <a class="portfolio-links" href="#" target="_blank"
-            >Reebok Store - Concept</a
-          >
-        </div>
-        <div class="portfolio-third">
+
+          <figcaption>
+            <a href="#" target="_blank">Reebok Store - Concept</a>
+          </figcaption>
+        </figure>
+
+        <figure>
           <img
             src="src/portfolio img/Portfolio 3.jpg"
             alt="Braun Landing Page - Concept"
           />
-          <a class="portfolio-links" href="#" target="_blank"
-            >Braun Landing Page - Concept</a
-          >
-        </div>
+          
+          <figcaption>
+            <a href="#" target="_blank"
+              >Braun Landing Page - Concept</a
+            >
+          </figcaption>
+        </figure>
       </section>
     </main>
-    <!-- footer -->
 
-    <footer class="footer" id="contacts">
+    <footer id="footer">
       <h2 class="subtitle">Contacts</h2>
-      <p class="footer-description">
+      <p>
         Want to&nbsp;know more or&nbsp;just chat? You are welcome!
       </p>
-      <button class="button-contact">Send message</button>
-      <ul class="social">
-        <a href="#"><li id="linkedIn"></li></a>
-        <a href="#"><li id="Instagramm"></li></a>
-        <a href="#"><li id="Behonce"></li></a>
-        <a href="#"><li id="Dribble"></li></a>
+      <button>Send message</button>
+      <ul>
+        <li id="LinkedIn"><a href="#"></a></li>
+        <li id="Instagram"><a href="#"></a></li>
+        <li id="Behance"><a href="#"></a></li>
+        <li id="Dribble"><a href="#"></a></li>
       </ul>
-      <span class="advertise-myself">
+      <span>
         Like me on <br />
         LinkedIn, Instagram, Behance, Dribble
       </span>
