@@ -5,13 +5,19 @@
 body {
   margin: 0 auto;
   padding: auto 0;
-  
-  max-width: 945px;
 
   font-family: Arial;
 }
 
+.container {
+  margin: 0 auto;
+  padding: auto 0;
+
+  max-width: 945px;
+}
+
 ul {
+  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -42,7 +48,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* #summary, */
 #about,
 #skills,
 #portfolio {
@@ -59,15 +64,26 @@ a:hover {
 
 /* header */
 #header {
-  padding: 32px 0;
   margin-bottom: 40px;
 
+  background-color: #fff;
   border-bottom: 1px solid #828282;
+
+  position: sticky;
+  top: 0;
+}
+#header svg {
+  display: none;
+}
+
+#header nav {
+  padding: 32px 0;
+  margin: 0 auto;
+
+  max-width: 945px;
 }
 
 #header ul {
-  margin: 0;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -90,28 +106,26 @@ a:hover {
 
 #summary h1 {
   margin: 0;
-  
+
   width: 140px;
 
   font-size: 48px;
   font-weight: 700;
 }
 
-#summary div {
-  transform: rotate(-90deg);
-}
-
-#summary div {
+#summary figcaption div {
   width: 25px;
 
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+
+  transform: rotate(-90deg);
 }
 
 #summary div button {
   font-weight: 700;
-  
+
   background-color: initial;
 
   border: none;
@@ -124,10 +138,12 @@ a:hover {
 
   font-size: 18px;
   text-align: center;
+
+  background-color: #f6f6f6;
 }
 
-#about {
-  margin: 0;
+#about p:not(:last-child) {
+  margin-bottom: 36px;
 }
 
 /* skills */
@@ -140,10 +156,6 @@ a:hover {
 
   font-size: 18px;
   text-align: center;
-}
-
-#skills li {
-  width: 168px;
 }
 
 #skills span {
@@ -166,12 +178,16 @@ a:hover {
 
 #skills img {
   margin: 0 auto;
-  
+
   display: block;
 }
 
 #skills h3 {
   text-align: center;
+}
+
+#skills li div {
+  display: flex;
 }
 
 /* portfolio */
@@ -252,25 +268,25 @@ a:hover {
 }
 
 #LinkedIn {
-  background-image: url("../src/footer_img/LinkedIn.svg");
+  background-image: url("../assets/logos/linkedin.svg");
 }
 
 #Instagram {
-  background-image: url("../src/footer_img/Inst.svg");
+  background-image: url("../assets/logos/instagram.svg");
 }
 
 #Behance {
-  background-image: url("../src/footer_img/behance.svg");
+  background-image: url("../assets/logos/behance.svg");
 }
 
 #Dribble {
-  background-image: url("../src/footer_img/Dribble.svg");
+  background-image: url("../assets/logos/dribble.svg");
 }
 
 #footer span {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  
+
   color: #828282;
 }

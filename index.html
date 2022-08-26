@@ -5,11 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style/normolize.css" />
+    <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
+
+
     <header id="header">
+      <svg
+      id="graphics-star" 
+      viewBox="0 0 22 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M10.0845 0.85958C10.3844 -0.0606967 11.6863 -0.0606959 11.9862 0.859581L13.7373 6.23398C13.8714 6.64561 14.2551 6.92418 14.6881 6.92418H20.3488C21.3182 6.92418 21.7205 8.16521 20.9355 8.73398L16.3607 12.0486C16.0092 12.3033 15.8621 12.7555 15.9966 13.1682L17.7451 18.5349C18.0452 19.4557 16.9919 20.2227 16.2076 19.6544L11.6221 16.3321C11.272 16.0784 10.7987 16.0784 10.4486 16.3321L5.86309 19.6544C5.07883 20.2227 4.02554 19.4557 4.32556 18.5348L6.07414 13.1682C6.20859 12.7555 6.06151 12.3033 5.71005 12.0486L1.13518 8.73398C0.35017 8.16521 0.752501 6.92418 1.7219 6.92418H7.38265C7.81558 6.92418 8.19934 6.64561 8.33346 6.23398L10.0845 0.85958Z"
+        fill="#070707"
+        visibility="hidden"
+      />
+    </svg>
       <nav>
         <ul>
           <li>
@@ -37,159 +52,168 @@
 
     <main class="main">
       <section id="summary">
-        <figure>
-          <figcaption>
-            <h1>Denis Novik</h1>
+        <div class="container">
+          <figure>
+            <figcaption>
+              <h1>Denis Novik</h1>
 
-            <p>
-              UX | UI designer <br />
-              24 years old, Minsk
-            </p>
+              <p>
+                UX | UI designer <br />
+                24 years old, Minsk
+              </p>
 
-            <div>
-              <button data-active>ENG</button>
-              <button>RU</button>
-            </div>
-          </figcaption>
+              <div>
+                <button data-active>ENG</button>
+                <button>RU</button>
+              </div>
+            </figcaption>
 
-          <img src="src/BSPP2266.jpg" alt="my photo" />
-        </figure>
+            <img src="assets/hero.jpg" alt="my photo" />
+          </figure>
+        </div>
       </section>
-     
-      <section id="about">
-        <h2 class="subtitle">About me</h2>
 
-        <p>
-          Hi, I&rsquo;m Denis&nbsp;&mdash; UX/UI designer from Minsk.
-          <br />
-          I&rsquo;m interested in&nbsp;design and everything connected
-          with&nbsp;it.
-          <br />
-          <br />
-          <br />
-          I&rsquo;m studying at&nbsp;courses &laquo;Web and mobile design
-          <br />
-          interfaces&raquo; in&nbsp;IT-Academy.
-          <br />
-          <br />
-          <br />
-          Ready to&nbsp;implement excellent projects
-          <br />
-          with wonderful people.
-        </p>
+      <section id="about">
+        <div class="container">
+          <h2 class="subtitle">About me</h2>
+
+          <p>
+            Hi, I&rsquo;m Denis&nbsp;&mdash; UX/UI designer from Minsk.
+            <br />
+            I&rsquo;m interested in&nbsp;design and everything connected
+            with&nbsp;it.
+          </p>
+          <p>
+            I&rsquo;m studying at&nbsp;courses &laquo;Web and mobile design
+            <br />
+            interfaces&raquo; in&nbsp;IT-Academy.
+          </p>
+          <p>
+            Ready to&nbsp;implement excellent projects
+            <br />
+            with wonderful people.
+          </p>
+        </div>
       </section>
       <!-- skills -->
 
       <section id="skills">
-        <h2 class="subtitle">Skills</h2>
+        <div class="container">
+          <h2 class="subtitle">Skills</h2>
 
-        <span class="skills-description">
-          I&nbsp;work in&nbsp;such programs&nbsp;as.
-        </span>
+          <span> I&nbsp;work in&nbsp;such programs&nbsp;as. </span>
 
-        <ul>
-          <li>
-            <img src="src/skills img/PS.jpg" alt="Photoshop icon" />
-            
-            <h3>Adobe Photoshop</h3>
+          <ul>
+            <li>
+              <img
+                src="assets/skills-images/adobe-photoshop.jpg"
+                alt="Adobe photoshop icon"
+              />
 
-            <div class="skills-rating flex">
-              <img src="src/Black-star.svg" alt="Skill rating 4 by 5" />
-              <img src="src/Black-star.svg" alt="" />
-              <img src="src/Black-star.svg" alt="" />
-              <img src="src/Black-star.svg" alt="" />
-              <img src="src/Empty-star.svg" alt="" />
-            </div>
-          </li>
+              <h3>Adobe Photoshop</h3>
 
-          <li class="skills-item">
-            <img src="src/skills img/AI.jpg" alt="Adobe Illustrator icon" />
-            
-            <h3>Adobe Illustrator</h3>
-            
-            <div class="skills-rating flex">
-              <img src="src/Black-star.svg" alt="Skill rating 3 by 5" />
-              <img src="src/Black-star.svg" alt="" />
-              <img src="src/Black-star.svg" alt="" />
-              <img src="src/Empty-star.svg" alt="" />
-              <img src="src/Empty-star.svg" alt="" />
-            </div>
-          </li>
+              <div class="skills-rating">
+                <img src="assets/filled-star.svg" alt="Skill rating 4 by 5" />
+                <img src="assets/filled-star.svg" alt="" />
+                <img src="assets/filled-star.svg" alt="" />
+                <img src="assets/filled-star.svg" alt="" />
+                <img src="assets/empty-star.svg" alt="" />
+              </div>
+            </li>
 
-          <li class="skills-item">
-            <img src="src/skills img/AAE.jpg" alt="After Effect icon" />
-            
-            <h3>Adobe After Effect</h3>
-            
-            <div class="skills-rating flex">
-              <img src="src/Black-star.svg" alt="Skill rating 4 by 5" />
-              <img src="src/Black-star.svg" alt="" />
-              <img src="src/Black-star.svg" alt="" />
-              <img src="src/Black-star.svg" alt="" />
-              <img src="src/Empty-star.svg" alt="" />
-            </div>
-          </li>
+            <li>
+              <img
+                src="assets/skills-images/adobe-illustrator.jpg"
+                alt="Adobe Illustrator icon"
+              />
 
-          <li class="skills-item">
-            <img src="src/skills img/Figma.jpg" alt="Figma icon" />
-            
-            <h3>Figma</h3>
-            
-            <div class="skills-rating flex">
-              <img src="src/Black-star.svg" alt="Skill rating 4 by 5" />
-              <img src="src/Black-star.svg" alt="" />
-              <img src="src/Black-star.svg" alt="" />
-              <img src="src/Black-star.svg" alt="" />
-              <img src="src/Empty-star.svg" alt="" />
-            </div>
-          </li>
-        </ul>
+              <h3>Adobe Illustrator</h3>
+
+              <div class="skills-rating">
+                <img src="assets/filled-star.svg" alt="Skill rating 3 by 5" />
+                <img src="assets/filled-star.svg" alt="" />
+                <img src="assets/filled-star.svg" alt="" />
+                <img src="assets/empty-star.svg" alt="" />
+                <img src="assets/empty-star.svg" alt="" />
+              </div>
+            </li>
+
+            <li>
+              <img
+                src="assets/skills-images/adobe-after-effect.jpg"
+                alt="After Effect icon"
+              />
+
+              <h3>Adobe After Effect</h3>
+
+              <div class="skills-rating">
+                <img src="assets/filled-star.svg" alt="Skill rating 4 by 5" />
+                <img src="assets/filled-star.svg" alt="" />
+                <img src="assets/filled-star.svg" alt="" />
+                <img src="assets/filled-star.svg" alt="" />
+                <img src="assets/empty-star.svg" alt="" />
+              </div>
+            </li>
+
+            <li>
+              <img src="assets/skills-images/figma.jpg" alt="Figma icon" />
+
+              <h3>Figma</h3>
+
+              <div class="skills-rating">
+                <img src="assets/filled-star.svg" alt="Skill rating 4 by 5" />
+                <img src="assets/filled-star.svg" alt="" />
+                <img src="assets/filled-star.svg" alt="" />
+                <img src="assets/filled-star.svg" alt="" />
+                <img src="assets/empty-star.svg" alt="" />
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section id="portfolio">
-        <h2 class="subtitle">Portfolio</h2>
-        <figure>
-          <img
-            src="src/portfolio img/Portfolio 1.jpg"
-            alt="Online fashion store - Homepage"
-          />
+        <div class="container">
+          <h2 class="subtitle">Portfolio</h2>
+          <figure>
+            <img
+              src="assets/portfolio-images/fashion-store.jpg"
+              alt="Online fashion store - Homepage"
+            />
 
-          <figcaption>
-            <a href="#" target="_blank">Online fashion store - Homepage</a>
-          </figcaption>
-        </figure>
+            <figcaption>
+              <a href="#" target="_blank">Online fashion store - Homepage</a>
+            </figcaption>
+          </figure>
 
-        <figure>
-          <img
-            src="src/portfolio img/Portfolio 2.jpg"
-            alt="Reebok Store - Concept"
-          />
+          <figure>
+            <img
+              src="assets/portfolio-images/reebok-store-concept.jpg"
+              alt="Reebok Store - Concept"
+            />
 
-          <figcaption>
-            <a href="#" target="_blank">Reebok Store - Concept</a>
-          </figcaption>
-        </figure>
+            <figcaption>
+              <a href="#" target="_blank">Reebok Store - Concept</a>
+            </figcaption>
+          </figure>
 
-        <figure>
-          <img
-            src="src/portfolio img/Portfolio 3.jpg"
-            alt="Braun Landing Page - Concept"
-          />
-          
-          <figcaption>
-            <a href="#" target="_blank"
-              >Braun Landing Page - Concept</a
-            >
-          </figcaption>
-        </figure>
+          <figure>
+            <img
+              src="assets/portfolio-images/braun-landing-concept.jpg"
+              alt="Braun Landing Page - Concept"
+            />
+
+            <figcaption>
+              <a href="#" target="_blank">Braun Landing Page - Concept</a>
+            </figcaption>
+          </figure>
+        </div>
       </section>
     </main>
 
     <footer id="footer">
       <h2 class="subtitle">Contacts</h2>
-      <p>
-        Want to&nbsp;know more or&nbsp;just chat? You are welcome!
-      </p>
+      <p>Want to&nbsp;know more or&nbsp;just chat? You are welcome!</p>
       <button>Send message</button>
       <ul>
         <li id="LinkedIn"><a href="#"></a></li>
